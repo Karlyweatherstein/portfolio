@@ -148,3 +148,32 @@ img {
   display: flex;
   /* width: 600px; */
 }
+
+.class-work {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.horiseon {
+  line-height: 1;
+  padding: 30px 8px;
+  display: flex;
+}
+
+.honeycomb {
+  line-height: 1;
+  padding: 30px 8px;
+  display: flex;
+}
+
+.coding {
+  line-height: 1;
+  padding: 30px 8px;
+  display: flex;
+}
+
+.calculator {
+  line-height: 1;
+  padding: 30px 8px;
+  display: flex;
+}
