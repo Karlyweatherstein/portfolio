@@ -14,7 +14,7 @@ header {
   background-color: #32343d;
   padding: 15px;
   display: flex;
-  height: 70px;
+  height: 40px;
   flex-wrap: flex;
 }
 
@@ -67,28 +67,25 @@ header nav ul li {
 
 /* Hero */
 .hero {
-  background-image: url("../assets/images/hero-bg.jpg");
+  background-color: lightgray;
   background-size: cover;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  padding: 60px;
 }
 
 .hero div {
   display: flex;
-  position: absolute;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .hero div h2 {
   display: flex;
-  text-align: right;
+  flex-wrap: wrap;
   background-color: #92cccd;
   color: #32343d;
-  padding: 6px;
-  position: relative;
-  right: -235px;
+  position: absolute;
+  right: 5px;
+  top: 24px;
 }
 
 /* "About me" section */
@@ -111,6 +108,7 @@ header nav ul li {
   width: auto;
   text-align: left;
   float: left;
+  /* flex-direction: row; */
 }
 
 .about div p {
@@ -146,8 +144,8 @@ img {
   width: 100%;
   color: #32343d;
   margin: 1px auto;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .class-work img {
@@ -211,6 +209,7 @@ img {
   color: #32343d;
   flex: 1 1 150px;
   position: relative;
+  align-items: stretch;
 }
 
 .images img,
