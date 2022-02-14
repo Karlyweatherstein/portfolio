@@ -1,4 +1,4 @@
-#Portfolio
+# Portfolio
 
 ## A website to showcase all of my projects and skills.
 
@@ -33,6 +33,6 @@
 
   THEN I am presented with a responsive layout that adapts to my viewport
 
-![01-html-css-git-homework-demo](https://user-images.githubusercontent.com/95808330/152670913-b4dc578d-218b-49ba-8799-c3a449f79ee4.png)
+![Mockup](assets/images/mockup.png)
 
-URL: ADD URL
+URL: https://karlyweatherstein.github.io/portfolio/
