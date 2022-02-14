@@ -11,41 +11,42 @@ body {
 
 /* Header */
 header {
+  padding: 20px 35px;
   background-color: #32343d;
-  padding: 15px;
   display: flex;
-  height: 40px;
-  flex-wrap: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+header a {
+  text-decoration: none;
+  color: #92cccd;
 }
 
 header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #32343d;
   background-color: #92cccd;
+  margin: 0;
   padding: 5px 5px 5px 40px;
   position: absolute;
   left: 0;
-}
-
-/*Header links*/
-header a {
-  text-decoration: none;
 }
 
 header h1 a {
   color: #32343d;
 }
 
-header nav ul li a {
-  color: #92cccd;
-  padding: 10px;
-}
-
-/* Nav */
 header nav {
-  margin: 10px 0;
-  position: absolute;
-  right: 100px;
-  flex-wrap: wrap;
-  right: 30px;
+  margin: 25px 0;
 }
 
 header nav ul {
@@ -54,22 +55,27 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  position: absolute;
+  right: 0;
 }
 
-header nav ul li {
-  list-style: none;
+header nav ul li a {
   padding: 10px 15px;
-  border-bottom: 2px solid #92cccd;
-  padding: 2px 3px;
-  margin: 0 6px;
-  flex-wrap: wrap;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: lightgray;
+  color: #32343d;
+  border-radius: 15px;
 }
 
 /* Hero */
 .hero {
   background-color: lightgray;
   background-size: cover;
-  padding: 60px;
+  padding: 78px;
 }
 
 .hero div {
@@ -85,7 +91,8 @@ header nav ul li {
   color: #32343d;
   position: absolute;
   right: 5px;
-  top: 24px;
+  top: 8px;
+  font-size: 36px;
 }
 
 /* "About me" section */
@@ -104,11 +111,12 @@ header nav ul li {
   padding: 10px;
   text-align: center;
   flex-wrap: wrap;
+  font-size: 20px;
 }
 
 .about div h2 {
   font-size: 50px;
-  margin: 20px 6px;
+  margin: 20px -18px;
   padding: 2px 8px 260px 26px;
   border-right: 4px solid #32343d;
   display: flex;
@@ -116,15 +124,11 @@ header nav ul li {
   text-align: left;
 }
 
-/*
-  writing-mode: vertical-rl;
-  text-orientation: upright; */
-
 .about div p {
   line-height: 1;
-  padding: 15px 110px;
+  padding: 1px 75px;
   display: flex;
-  width: 450px;
+  width: 430px;
   text-align: left;
   line-height: 1.4;
   justify-content: space-around;
@@ -135,7 +139,7 @@ header nav ul li {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 15px 110px;
+  padding: 15px 75px;
 }
 
 /* Work */
@@ -144,7 +148,6 @@ header nav ul li {
   width: 100%;
   color: #32343d;
   margin: 1px auto;
-  justify-content: space-around;
   flex-wrap: wrap;
   position: relative;
 }
@@ -152,25 +155,21 @@ header nav ul li {
 .class-work h2 {
   font-size: 50px;
   border-right: 4px solid #32343d;
-  padding: 1px 12px 800px 127px;
+  padding: 1px 22px 250px 20px;
   display: flex;
   width: auto;
   text-align: left;
   color: #32343d;
 }
 
-img {
-  size: 10%;
-}
-
-.class-work img {
-  width: 100%;
+.class-work div div a img {
+  width: 80%;
 }
 
 .run-buddy {
   line-height: 1;
-  padding: 2px 82px;
-  display: block;
+  padding: 2px 30px;
+  display: inline;
   color: #32343d;
   flex-basis: 80%;
 }
@@ -182,25 +181,37 @@ img {
   width: 69vw;
   justify-content: space-between;
   line-height: 1;
-  padding: 0 340px;
+  padding: 0 240px;
   position: relative;
 }
 
 .run-buddy img {
-  width: 60vw;
+  width: 30vw;
+  position: relative;
+  border: 4px solid #92cccd;
+}
+
+.run-buddy-text {
+  flex-wrap: wrap;
+  position: absolute;
+  top: 140px;
+  left: 202px;
+  background-color: #92cccd;
+  color: #32343d;
+  font-size: 20px;
 }
 
 .work-textbox {
   flex-wrap: wrap;
   position: absolute;
-  top: 175px;
+  top: 105px;
   left: 0;
   background-color: #92cccd;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .work-textbox p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .images {
@@ -224,6 +235,12 @@ img {
   color: #32343d;
 }
 
+.work:hover {
+  background: lightgray;
+  color: #32343d;
+  border-radius: 15px;
+}
+
 /* Footer */
 
 .contact {
@@ -231,12 +248,13 @@ img {
   list-style: none;
   color: #32343d;
   display: flex;
+  margin: 20px 0;
 }
 
 .contact h2 {
   font-size: 50px;
-  margin: 20px 6px;
-  padding: 2px 8px 26px 26px;
+  margin: 20px 80px 20px 6px;
+  padding: 2px 8px 26px 48px;
   border-right: 4px solid #32343d;
   display: flex;
   width: auto;
@@ -245,9 +263,8 @@ img {
 }
 
 .contact div ul {
-  margin: 10px 0;
+  margin: 10px auto;
   position: absolute;
-  right: 100px;
   flex-wrap: wrap;
 }
 
@@ -257,7 +274,9 @@ img {
   align-items: center;
   display: inline-block;
   text-align: justify;
-  padding: 40px 10px 6px 10px;
+  padding: 40px 6px 6px 6px;
   border-bottom: 3px solid #32343d;
-  margin: 0 10px;
+  margin: 0 48px;
+  font-size: 32px;
+  text-align: right;
 }
