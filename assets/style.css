@@ -1,282 +1,304 @@
 * {
+  background-color: #242734;
+  position: relative;
+  color: #b3beb3;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
-body {
-  background-color: #ededf6;
-  font-family: Helvetica, Arial, sans-serif;
+.titles {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Header */
-header {
-  padding: 20px 35px;
-  background-color: #32343d;
+.layout {
+  margin-bottom: 300px;
+}
+
+/* Nav bar */
+nav {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-size: cover;
-  background-position: 80%;
-  background-attachment: fixed;
-  z-index: 1;
-}
-
-header a {
-  text-decoration: none;
-  color: #92cccd;
-}
-
-header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  color: #32343d;
-  background-color: #92cccd;
-  margin: 0;
-  padding: 5px 5px 5px 40px;
-  position: absolute;
-  left: 0;
-}
-
-header h1 a {
-  color: #32343d;
-}
-
-header nav {
-  margin: 25px 0;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: #515e65;
+  width: 100%;
+  padding: 10px;
+}
+
+nav h1 {
+  padding-left: 8px;
+  margin-left: 8px;
+  background-color: #515e65;
+}
+
+nav ul {
+  color: #b3beb3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
-  position: absolute;
-  right: 0;
+  background-color: #515e65;
+  margin-right: 10px;
 }
 
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
+nav ul li {
+  padding: 8px;
+  background-color: #515e65;
 }
 
-header nav ul li a:hover {
-  background: lightgray;
-  color: #32343d;
+nav ul li a {
+  background-color: #515e65;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #4ec5a0;
+  color: #242734;
   border-radius: 15px;
+  padding: 4px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* Hero */
-.hero {
-  background-color: lightgray;
-  background-size: cover;
-  padding: 78px;
+
+.heroDiv {
+  display: flex;
+  padding: 30px;
+  align-items: center;
 }
 
-.hero div {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+.heroText h1 {
+  background-color: #b3beb3;
+  color: #242734;
+  padding: 8px;
+  line-height: 35px;
+  width: fit-content;
+  margin-bottom: 12px;
 }
 
-.hero div h2 {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #92cccd;
-  color: #32343d;
-  position: absolute;
-  right: 5px;
-  top: 8px;
-  font-size: 36px;
+.heroText {
+  text-align: left;
+  width: 60%;
+  margin-right: 80px;
+  padding-right: 30px;
+  line-height: 32px;
 }
 
-/* "About me" section */
-.about {
-  display: flex;
-  width: 100%;
-  color: #32343d;
-  margin: 0 auto;
-  flex-wrap: wrap;
+.profilePic {
+  text-align: right;
+  width: 60%;
 }
 
-.about-info {
+.profilePic img {
+  width: 60%;
+}
+
+/* About */
+
+.about-div {
   display: flex;
-  width: auto;
-  justify-content: space-around;
-  padding: 10px;
+  margin: 30px;
+  align-items: center;
+}
+
+.about-div img {
+  width: 30%;
+  padding: 0 15px 0 40px;
+}
+
+.about-text {
+  text-align: left;
+  width: 50%;
+  padding: 15px;
+  line-height: 32px;
+}
+
+/* Resume */
+.resume {
+  margin: 20px;
   text-align: center;
-  flex-wrap: wrap;
-  font-size: 20px;
 }
 
-.about div h2 {
-  font-size: 50px;
-  margin: 20px -18px;
-  padding: 2px 8px 260px 26px;
-  border-right: 4px solid #32343d;
+.resume h1 {
+  margin-bottom: 40px;
+}
+
+.resume a {
+  color: #242734;
+  text-decoration: none;
+}
+
+.resume a h2 {
+  color: #4ec5a0;
+  text-align: center;
+  padding: 10px;
+}
+
+.resume ul li {
+  list-style: none;
+}
+
+/* Portfolio */
+.portfolio {
   display: flex;
-  width: auto;
-  text-align: left;
+  align-items: center;
+  margin: 60px 0;
 }
 
-.about div p {
-  line-height: 1;
-  padding: 1px 75px;
-  display: flex;
-  width: 430px;
-  text-align: left;
-  line-height: 1.4;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.portfolio-mock {
+  text-align: right;
 }
 
-.profile-pic {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 15px 75px;
+.portfolio-mock img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Work */
-.class-work {
-  display: flex;
-  width: 100%;
-  color: #32343d;
-  margin: 1px auto;
-  flex-wrap: wrap;
-  position: relative;
+.portfolio div {
+  width: 50%;
+  margin: 20 30px;
+  padding: 20px;
 }
 
-.class-work h2 {
-  font-size: 50px;
-  border-right: 4px solid #32343d;
-  padding: 1px 22px 250px 20px;
-  display: flex;
-  width: auto;
-  text-align: left;
-  color: #32343d;
-}
-
-.class-work div div a img {
+.portfolio img {
   width: 80%;
 }
 
-.run-buddy {
-  line-height: 1;
-  padding: 2px 30px;
-  display: inline;
-  color: #32343d;
-  flex-basis: 80%;
+.icon h2 {
+  background-color: #b3beb3;
+  width: fit-content;
+  color: #242734;
+  padding: 8px;
 }
 
-.extra-work {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 69vw;
-  justify-content: space-between;
-  line-height: 1;
-  padding: 0 240px;
-  position: relative;
+.icon img {
+  width: 50px;
 }
 
-.run-buddy img {
-  width: 30vw;
-  position: relative;
-  border: 4px solid #92cccd;
-}
-
-.run-buddy-text {
-  flex-wrap: wrap;
-  position: absolute;
-  top: 140px;
-  left: 202px;
-  background-color: #92cccd;
-  color: #32343d;
-  font-size: 20px;
-}
-
-.work-textbox {
-  flex-wrap: wrap;
-  position: absolute;
-  top: 105px;
-  left: 0;
-  background-color: #92cccd;
-  font-size: 18px;
-}
-
-.work-textbox p {
-  font-size: 14px;
-}
-
-.images {
-  margin: 8px;
-  color: #32343d;
-  flex: 1 1 150px;
-  position: relative;
-  align-items: stretch;
-}
-
-.images img,
-.images-run img {
-  border: 3px solid #92cccd;
-}
-
-.images h3,
-.images-run h3,
-.images p,
-.images-run p {
+/* Contact */
+#contact {
+  text-align: center;
   text-decoration: none;
-  color: #32343d;
-}
-
-.work:hover {
-  background: lightgray;
-  color: #32343d;
-  border-radius: 15px;
+  margin: 0 0 30px 0;
 }
 
 /* Footer */
 
-.contact {
-  text-decoration: none;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #515e65;
+  display: block;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #515e65;
+  margin: 0;
+}
+
+footer ul li {
   list-style: none;
-  color: #32343d;
-  display: flex;
-  margin: 20px 0;
+  background-color: #515e65;
 }
 
-.contact h2 {
-  font-size: 50px;
-  margin: 20px 80px 20px 6px;
-  padding: 2px 8px 26px 48px;
-  border-right: 4px solid #32343d;
-  display: flex;
-  width: auto;
-  text-align: left;
-  float: left;
+footer ul li a {
+  background-color: #515e65;
 }
 
-.contact div ul {
-  margin: 10px auto;
-  position: absolute;
-  flex-wrap: wrap;
+footer ul li a img {
+  width: 40px;
+  height: auto;
+  background-color: #515e65;
 }
 
-.contact div ul li {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  display: inline-block;
-  text-align: justify;
-  padding: 40px 6px 6px 6px;
-  border-bottom: 3px solid #32343d;
-  margin: 0 48px;
-  font-size: 32px;
-  text-align: right;
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  /* Hero */
+  .heroDiv {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+  }
+
+  .heroText {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profilePic {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Nav */
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+
+  nav h1 {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    height: 10%;
+    width: 100%;
+    margin: 2px;
+    background-color: #515e65;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .portfolio-mock {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .icon {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .icon h2 {
+    width: 100%;
+  }
+
+  .titles {
+    font-size: 40px;
+  }
+
+  /* About */
+  .about-div {
+    display: inline-block;
+    margin: auto;
+  }
+
+  .about-div img {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+    width: 90%;
+    margin: 14px;
+    padding: 6px;
+  }
 }

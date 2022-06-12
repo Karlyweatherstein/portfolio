@@ -7,121 +7,218 @@
   </head>
   <body>
     <!--navigation-->
-    <header>
-      <h1>
-        Karly Weatherstein
-      </h1>
-      <nav class="nav-border">
+    <header >
+      <nav >
+        <h1>Karly Weatherstein</h1>
         <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
+            <li> 
+              <a href='#/'>Home</a>
+            </li>
+            <li>
+              <a href='#about-me'>About Me</a>
+            </li>
+            <li>
+              <a href='#portfolio'>Portfolio</a>
+            </li>
+            <li>
+              <a href='#contact'>Contact</a>
+            </li>
+            <li>
+              <a href='#resume'>Resume</a>
+            </li>
         </ul>
       </nav>
     </header>
 
     <!--Hero-->
-    <section class="hero">
-      <div>
-        <h2>Portfolio!</h2>
+    <section id='/' class='layout'>
+      <div class='heroDiv'>
+
+        <div class='profilePic'>
+            <img 
+            src='./assets/images/avatar.png'
+            alt='profile' 
+            />
+        </div>
+        <div class='heroText'>
+            <h1>Hi, I'm Karly Weatherstein!</h1>
+            <p>
+                I am a full stack developer excited to take on new projects! Take a look at my portfolio to see more of my work or click on my "About me" tab to learn more about who I am! I look forward to connecting with you!
+            </p>
+        </div>
+        
       </div>
     </section>
 
 
     <!--"about me" section-->
-    <section id="about-me">
-      <div class="about">
-        <div>
-          <h2 >About Me</h2>
+    <section id='about-me' class='layout'>
+      <div>
+        <h1 class="titles">About Me</h1>
+        <div class='about-div'> 
+            <img class='profilePic'
+                  src='./assets/images/profile.jpg'
+                  alt='profile'>
+  
+              </img>
+              <p class='about-text'>
+                  Hello! My name is Karly and I love all things creative! Throughout my
+                  schooling I never really knew what I wanted to do in life; all I knew
+                  was I liked creating things. All kinds of things, traditional pen and
+                  paper, paint, clay, printmaking, and digital. College truly opened my
+                  eyes to all of the possibilities. I was exposed to all kinds of
+                  different mediums. That is where I took my first digital media class and
+                  found playing around in computer programs to be so fun and rewarding. I
+                  graduated with a bachelors in fine art but still had no clue what to do
+                  with that. I was freelancing with my art but I needed more and one day
+                  stumbled upon coding. I thought it was so interesting; using code to
+                  create and design web applications. I used some of the free resources
+                  out there to play around with it and what do you know? I loved it. 
+                  <br />
+                  <br/>
+                  Fast
+                  forward to me researching online programs and bootcamps and found out
+                  the university I attended was offering a bootcamp that started in a
+                  month. I signed up as fast as I could and spent every waking second
+                  practicing my new found love of using technology to be creative. I was
+                  trained in the MERN stack - MongoDB, Express.js, React, and Node.js! I
+                  have learned HTML, CSS, and JavaScript as well as many other languages
+                  and libraries. Make sure to checkout my resume section for all of my
+                  experience!
+              </p>
         </div>
-        <div class="about-info">
-          <p>
-            Hi, my name is Karly! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Iste quae laudantium atque quibusdam. Voluptatum
-            porro nulla minima quisquam hic, quidem accusantium, dolor aperiam
-            soluta ex, omnis temporibus quam saepe. Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum sint non atque consequuntur sapiente at aut eius? Debitis ipsam dolores minus nostrum, eos eum quasi possimus nam nisi. Repellendus, optio.
-          </p>
-          <img class="profile-pic" src="./assets/images/profile.jpg" alt="Picture of myself, Karly Weatherstein"
-          width="250" height="auto">
-        </div>
+        
       </div>
     </section>
 
     <!--"work" section-->
-    <section id="work">
-      <div class="class-work">
-        <h2>Work</h2>
-
-        <div class="run-buddy">
-          <a href="https://karlyweatherstein.github.io/run-buddy/">
-            <img alt="Run-Buddy" src="./assets/images/run-buddy.jpg">
-          <div class="run-buddy-text">
-            <h3>Run Buddy</h3>
-            <p>HTML/CSS</p>
-           </div>  
+    <section id="portfolio" class='layout'>
+      <div>
+        <h1 class='titles'>
+            Portfolio
+        </h1>
+        <!-- Run Buddy -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://karlyweatherstein.github.io/run-buddy/'>
+                    <img alt="Run-Buddy" src='./assets/images/portfolio-mockups/run-buddy.jpg'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Run Buddy</h2>
+                <a href='https://github.com/Karlyweatherstein/run-buddy'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: HTML, CSS</p>
+            </div>
         </div>
+        <!-- Show Me How  -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://boiling-fjord-93274.herokuapp.com/'>
+                    <img alt="Show-Me-How" src='./assets/images/portfolio-mockups/showMeHow-mockup.jpg'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Show Me How</h2>
+                <a href='https://github.com/jamesbelk0/Show-Me-How'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: Javascript, Handlebars, Express, MongoDB</p>
+            </div>
+        </div>
+        <!-- Password Generator  -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://karlyweatherstein.github.io/password-generator/'>
+                    <img alt="Password-Generator" src='./assets/images/portfolio-mockups/password-mockup.png'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Password Generator</h2>
+                <a href='https://github.com/Karlyweatherstein/password-generator'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: HTML, CSS, Javascript</p>
+            </div>
+        </div>
+        <!-- Best Furrrends  -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://karlyweatherstein.github.io/best-furrends/'>
+                    <img alt="best-furrends" src='./assets/images/portfolio-mockups/best-furrends-mockup.jpg'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Best Furrends</h2>
+                <a href='https://github.com/Karlyweatherstein/best-furrends'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: HTML, CSS, Javascript</p>
+            </div>
+        </div>
+        <!-- Horiseon -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://karlyweatherstein.github.io/horiseon/'>
+                    <img alt="Horiseon" src='./assets/images/portfolio-mockups/horiseon.jpg'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Horiseon</h2>
+                <a href='https://github.com/Karlyweatherstein/horiseon'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: HTML, CSS, Javascript</p>
+            </div>
+        </div>
+        <!-- Weather Dashboard -->
+        <div class='portfolio'>
+            <div class='portfolio-mock'>
+                <a href='https://karlyweatherstein.github.io/weather-dashboard/'>
+                    <img alt="Weather-dashboard" src='./assets/images/portfolio-mockups/weather-dashboard.jpg'></img>
+                </a>
+            </div>
+            <div class='icon' >
+                <h2>Weather Dashboard</h2>
+                <a href='https://github.com/Karlyweatherstein/weather-dashboard/'>
+                <img src='./assets/images/github-icon.png' alt='Github' ></img>
+                </a>
+                <p>Tools: HTML, CSS, Javascript, Rest API</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Resume -->
+    <section id='resume' class='layout'>
+      <div class='resume'>
+        <h1 class='titles'>Resume</h1>
+        <a href="https://drive.google.com/uc?export=download&id=1-x9ojKlaYUUrDUJNLeVTxN8to79GCfvd" download="karly-weatherstein-resume">
+           <h2>
+               Click this to download my resume!
+            </h2>
+        </a>
+        <h2 >Proficient in:</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+
+        </ul>
        
-        <div class="extra-work">
-          <div class="horiseon images">
-            <a href="https://karlyweatherstein.github.io/horiseon/">
-              <img alt="Horiseon" src="./assets/images/horiseon.jpg"
-              width="400" height="auto">
-              <div class="work-textbox">
-                <h3>Horiseon</h3>
-                <p>HTML/CSS</p>
-              </div>
-            
-          </div>
-
-          <div class="honeycomb images">
-            <a href="https://karlyweatherstein.github.io/best-furrends/">
-              <img alt="Honeycomb" src="./assets/images/best-furrends-mockup.jpg"
-              width="400" height="auto">
-              <div class="work-textbox">
-                <h3>Best Furrends</h3>
-                <p>HTML/CSS/Javascript</p>
-              </div>
-            
-          </div>
-
-          <div class="coding images">
-            <a href="https://github.com/jamesbelk0/Show-Me-How">
-              <img alt="coding" src="./assets/images/showMeHow-mockup.jpg"
-              width="400" height="auto">
-              <div class="work-textbox">
-                <h3>Show Me How</h3>
-                <p>Node/SQL</p>
-              </div>
-            
-          </div>
-
-          <div class="calculator images">
-            <a href="https://karlyweatherstein.github.io/">
-              <img alt="calculator" src="./assets/images/Calculator.jpg"
-              width="400" height="auto">
-              <div class="work-textbox">
-                <h3>Calculator</h3>
-                <p>MERN stack</p>
-              </div>
-            
-          </div>
-        </div>
       </div>
     </section>
 
     <!--"contact me" section-->
 
-    <section id="contact-me" class="contact">
-      <h2>Contact Me</h2>
+    <section id="contact" class="contact">
+      <h2 class='titles'>Contact Me</h2>
       <div>
         <ul>
           <li>
@@ -131,10 +228,31 @@
             <h4>Karlyweatherstein@gmail.com</h4>
           </li>
           <li>
-            <h4>Github</h4>
+            <a href='https://github.com/Karlyweatherstein'><h4>Github</h4></a>
           </li>
         </ul>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li>
+          <a href='https://github.com/Karlyweatherstein'>
+              <img src='./assets/images/github-icon.png' alt='Github' ></img>
+          </a>
+        </li>
+        <li>
+          <a href='mailto: karlyweatherstein@gmail.com'>
+              <img src='./assets/images/email-icon.png' alt='Email' ></img>
+          </a>
+        </li>
+        <li>
+          <a href='https://www.linkedin.com/in/karly-weatherstein-963922137/'>
+            <img src='./assets/images/linkedin-icon.png' alt='Linkedin'></img>
+          </a>
+      </li>
+    </ul>
+  </footer>
   </body>
 </html>
