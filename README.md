@@ -4,8 +4,7 @@
 
 ## The goal is to showcase my skills
 
-- I WANT to view a potential employee's deployed portfolio of work samples
-  SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+- This application covers everything about me - from my skills to my interests to contacting me! Feel free to checkout all of my links to see my works or socials.
 
 ## GIVEN I need to sample a potential employee's previous work
 
@@ -21,10 +20,6 @@
 
   THEN the UI scrolls to a section with titled images of the developer's applications
 
-- WHEN I am presented with the developer's first application
-
-  THEN that application's image should be larger in size than the others
-
 - WHEN I click on the images of the applications
 
   THEN I am taken to that deployed application
@@ -33,6 +28,6 @@
 
   THEN I am presented with a responsive layout that adapts to my viewport
 
-![Mockup](assets/images/mockup.png)
+![Mockup](assets/images/portfolio-mockup.jpg)
 
 URL: https://karlyweatherstein.github.io/portfolio/
